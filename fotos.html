@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Ahuashiyacu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+body {
+    background-color: darkgray;
+}
+
+img {
+    border-radius: 8px;
+}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">INICIO</a>
+    
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>AHUASHIYACU</b></h1>
+  <p><b>GALERIA DE FOTOS</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Presione</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="https://i.ibb.co/bmJ0vHn/ahua5-110801.jpg" style="width:100%">
+    <img src="https://i.ibb.co/FWPm866/ahua4-130803.jpg" style="width:100%">
+    <img src="https://i.ibb.co/0tBrv68/ahua3-145500.jpg" style="width:100%">
+    <img src="https://i.ibb.co/mRmTm4h/ahua2-145624.jpg" style="width:100%">
+    <img src="https://i.ibb.co/KytKDL1/ahua1-150048.jpg" style="width:100%">
+    <img src="https://i.ibb.co/58X8J5k/ahua6-091804.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="https://i.ibb.co/8X5z2nF/ahua7-090852.jpg" style="width:100%">
+    <img src="https://i.ibb.co/GHbmCXF/ahua8-090531.jpg" style="width:100%">
+    <img src="https://i.ibb.co/RHdzHPR/ahua9-090452.jpg" style="width:100%">
+    <img src="https://i.ibb.co/XpTRR15/ahua10-171606.jpg" style="width:100%">
+    <img src="https://i.ibb.co/FXMmgn8/ahua11-145844.jpg" style="width:100%">
+    <img src="https://i.ibb.co/Lt7YH96/ahua12-171640.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="https://i.ibb.co/dWns3JD/forestal-093558.jpg" style="width:100%">
+    <img src="https://i.ibb.co/vvr9SmZ/downfall-ahuashiyacu.png" style="width:100%">
+    <img src="https://i.ibb.co/Q9TY95z/ahuashiyacu-ago11-676.jpg" style="width:100%">
+    <img src="https://i.ibb.co/qYC25TS/ahuashiyacu31.jpg" style="width:100%">
+    <img src="https://i.ibb.co/CMbqdF3/Ahuashiyacu2-110211.jpg" style="width:100%">
+    <img src="https://i.ibb.co/KytKDL1/ahua1-150048.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <h4>Siguenos</h4>
+    <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="w3-button w3-large w3-teal" href="#" title="Youtube"><i class="fa fa-youtube"></i></a>
+    <!--<a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>-->
+    <!--<a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>-->
+    <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram"></i></a>
+    <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/in/segundo-bartra-5b979a175/" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+    <p>Creado por: <a href="https://segundobartra.netlify.com/" target="_blank">Segundo Fasabi Bartra</a></p>
+  
+     
+      
+  </footer>
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
